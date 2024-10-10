@@ -73,6 +73,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
   }
 }

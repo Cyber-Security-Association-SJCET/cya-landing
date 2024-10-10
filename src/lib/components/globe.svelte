@@ -16,20 +16,20 @@
                 mapSamples: 10000,
                 dark: 1,
                 diffuse: 1.50,
-                mapBrightness: 50,
+                mapBrightness: 20,
                 onRender: (state) => {
                     state.phi = phi;
                     state.width = canvas.width;
                     state.height = canvas.height;
-                    phi += 0.01;
+                    phi += 0.005;
                 },
                 baseColor: [0.1, 0.1, 0.1],
                 markerColor: [1, 1, 1],
                 glowColor: [0.5, 0.5, 0.5],
-                offset: [0, 0],
+                offset: [0, 450],
                 markers: [],
                 devicePixelRatio: 1,
-                scale: 1
+                scale: 2
             })
         }
     });
