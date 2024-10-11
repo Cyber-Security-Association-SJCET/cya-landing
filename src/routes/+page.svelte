@@ -1,5 +1,6 @@
 <script lang="ts">
     import Globe from "$lib/components/globe.svelte"
+    import {PersonStanding} from "lucide-svelte"
 </script>
 
 <main class="w-full min-h-screen flex flex-col text-white font-[Geist]">
@@ -29,19 +30,52 @@
             <h2 class="text-3xl font-bold">ABOUT</h2>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
-            <div class="flex flex-col p-6 border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-center" id="wormhole">
-                <h2 class="font-bold text-2xl text-center">VISION</h2>
-                <p class="text-neutral-400">Developing into a world-class, pace-setting Institute of Engineering and Technology with distinct identity and character, meeting the goals and aspirations of the society.</p>
+            <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-center" id="wormhole">
+                <h2 class="font-bold text-5xl text-center font-[Jersey10]">VISION</h2>
+                <p class="text-neutral-300">Developing into a world-class, pace-setting Institute of Engineering and Technology with distinct identity and character, meeting the goals and aspirations of the society.</p>
             </div>
-            <div class="flex flex-col p-6 border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-center" id="wormhole">
-                <h2 class="font-bold text-2xl text-center">MISSON</h2>
-                <p class="text-neutral-400">
+            <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-center" id="wormhole">
+                <h2 class="font-bold text-5xl text-center font-[Jersey10]">MISSION</h2>
+                <p class="text-neutral-300">
                     To maintain a conducive infrastructure and learning environment for world class education.
                     <br>
                     To nurture a team of dedicated, competent and research oriented faculty.
                     <br>
                     To develop students with moral & ethical values, for their successful career by offering variety of programmes and services.
                 </p>
+            </div>
+        </div>
+        <div class="flex flex-col px-6 md:flex-row">
+            <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
+                <p class="p-6 text-neutral-300 border-b border-neutral-500 flex-grow">
+                    The Cyber Security Student Association at St. Joseph’s College of Engineering and Technology is a vibrant initiative aimed at enhancing student expertise in cybersecurity through hackathons, workshops, and seminars. By fostering collaboration and continuous learning, the association equips students to tackle complex challenges, engage with industry professionals, and participate in national and international competitions. It also promotes cybersecurity awareness within the academic community, helping students stay ahead of emerging threats and technologies.
+                </p>
+                <div class="flex flex-row">
+                    <div class="p-3 flex-grow">
+
+                    </div>
+                    <div class="p-3 border-x border-neutral-500 flex-grow justify-center items-center">
+                        <PersonStanding class="stroke-white mx-auto"/>
+                    </div>
+                    <div class="p-3 flex-grow border-r border-neutral-500 justify-center items-center">
+                        <img src="/cya.webp" alt="Cyber Association" class="w-9 h-fit m-auto">
+                    </div>
+                    <div class="p-3 flex-grow text-center">
+                        <p>ABOUT // CYA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[GajrajOne] md:border-t md:border-l-0 flex-grow">
+                <h2 class="text-3xl text-center">WORLD ENCRYPTION DAY</h2>
+                <h3 class="p-3 bg-slate-50 text-black w-fit text-2xl">OCTOBER 24</h3>
+            </div>
+            <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow">
+                <div class="p-6 flex-grow">
+
+                </div>
+                <div class="p-6 border-l md:border-l-0 md:border-t border-neutral-500 flex-grow">
+
+                </div>
             </div>
         </div>
     </section>

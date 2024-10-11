@@ -24,6 +24,7 @@
 	"dependencies": {
 		"clsx": "^2.1.1",
 		"cobe": "^0.6.3",
+		"lucide-svelte": "^0.451.0",
 		"tailwind-merge": "^2.5.2",
 		"tailwind-variants": "^0.2.1"
 	}
