@@ -1,17 +1,19 @@
 <script lang="ts">
     import Globe from "$lib/components/globe.svelte"
-    import {PersonStanding} from "lucide-svelte"
+    import Chessboard from "$lib/components/chessboard.svelte";
+    import {PersonStanding, Menu} from "lucide-svelte"
 </script>
 
 <main class="w-full min-h-screen flex flex-col text-white font-[Geist]">
     <nav class="flex flex-row p-6 border-b border-neutral-700 w-full items-center">
         <img src="/cya.webp" alt="Cyber Association" class="w-11 h-fit lg:w-14">
         <div class="md:flex flex-row items-center gap-6 ml-auto text-lg hidden">
+            <a href="#test">Home</a>
             <a href="#test">About</a>
-            <a href="#test">About</a>
-            <a href="#test">About</a>
-            <a href="#test">About</a>
+            <a href="#test">Blog</a>
+            <a href="#test">Projects</a>
         </div>
+        <Menu class="stroke-white ml-auto md:hidden"/>
     </nav>
     <section id="home" class="flex flex-col p-8 gap-2 h-screen">
         <div class="flex flex-col gap-2 md:flex-row md:justify-between">
@@ -30,34 +32,34 @@
             <h2 class="text-3xl font-bold">ABOUT</h2>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
-            <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-center" id="wormhole">
-                <h2 class="font-bold text-5xl text-center font-[Jersey10]">VISION</h2>
-                <p class="text-neutral-300">Developing into a world-class, pace-setting Institute of Engineering and Technology with distinct identity and character, meeting the goals and aspirations of the society.</p>
+            <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
+                <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">VISION</h2>
+                <p class="text-neutral-300 max-w-[500px]">To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute.</p>
             </div>
-            <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-center" id="wormhole">
-                <h2 class="font-bold text-5xl text-center font-[Jersey10]">MISSION</h2>
-                <p class="text-neutral-300">
-                    To maintain a conducive infrastructure and learning environment for world class education.
+            <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
+                <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">MISSION</h2>
+                <p class="text-neutral-300 max-w-[500px]">
+                    <bold class="font-bold">Education:</bold> To provide the comprehensive teaching of a cutting-edge and globally relevant curriculum in Cyber Security within a conducive and innovative learning environment.
                     <br>
-                    To nurture a team of dedicated, competent and research oriented faculty.
+                    <bold class="font-bold">Faculty Excellence</bold>: To cultivate a cadre of dedicated, highly competent, and research-driven faculty members, passionate about advancing the field of cybersecurity and delivering high-quality instructions.
                     <br>
-                    To develop students with moral & ethical values, for their successful career by offering variety of programmes and services.
+                    <bold class="font-bold">Collaboration</bold>: To actively collaborate with industry leaders, organizations, and government agencies in the development and application of cybersecurity solutions, while ensuring our educational offerings meet the evolving needs of society.
                 </p>
             </div>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
                 <p class="p-6 text-neutral-300 border-b border-neutral-500 flex-grow">
-                    The Cyber Security Student Association at St. Joseph’s College of Engineering and Technology is a vibrant initiative aimed at enhancing student expertise in cybersecurity through hackathons, workshops, and seminars. By fostering collaboration and continuous learning, the association equips students to tackle complex challenges, engage with industry professionals, and participate in national and international competitions. It also promotes cybersecurity awareness within the academic community, helping students stay ahead of emerging threats and technologies.
+                    CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies
                 </p>
                 <div class="flex flex-row">
-                    <div class="p-3 flex-grow">
-
+                    <div class="p-3 flex-grow flex justify-center items-center">
+                        <Chessboard/>
                     </div>
-                    <div class="p-3 border-x border-neutral-500 flex-grow justify-center items-center">
+                    <div class="p-3 border-x border-neutral-500 flex-grow flex justify-center items-center">
                         <PersonStanding class="stroke-white mx-auto"/>
                     </div>
-                    <div class="p-3 flex-grow border-r border-neutral-500 justify-center items-center">
+                    <div class="p-3 flex flex-grow border-r border-neutral-500 justify-center items-center">
                         <img src="/cya.webp" alt="Cyber Association" class="w-9 h-fit m-auto">
                     </div>
                     <div class="p-3 flex-grow text-center">
