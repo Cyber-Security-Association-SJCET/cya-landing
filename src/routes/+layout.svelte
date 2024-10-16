@@ -15,4 +15,9 @@
         font-family: "GajrajOne";
         src: url("/fonts/Gajraj_One/GajrajOne-Regular.ttf");
     }
+
+    @font-face{
+        font-family: "CutiveMono";
+        src: url("/fonts/Cutive_Mono/CutiveMono-Regular.ttf");
+    }
 </style>

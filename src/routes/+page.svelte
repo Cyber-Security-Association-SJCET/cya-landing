@@ -1,6 +1,8 @@
 <script lang="ts">
     import Globe from "$lib/components/globe.svelte"
     import Chessboard from "$lib/components/chessboard.svelte";
+    import Twistysquare from "$lib/components/twistysquare.svelte";
+    import Trafficlights from "$lib/components/trafficlights.svelte";
     import {PersonStanding, Menu} from "lucide-svelte"
 </script>
 
@@ -72,11 +74,11 @@
                 <h3 class="p-3 bg-slate-50 text-black w-fit text-2xl">OCTOBER 24</h3>
             </div>
             <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow">
-                <div class="p-6 flex-grow">
-
+                <div class="p-6 flex-grow flex items-center justify-center">
+                    <Twistysquare/>
                 </div>
-                <div class="p-6 border-l md:border-l-0 md:border-t border-neutral-500 flex-grow">
-
+                <div class="p-6 border-l md:border-l-0 md:border-t border-neutral-500 flex-grow flex items-center justify-center">
+                    <Trafficlights/>
                 </div>
             </div>
         </div>
