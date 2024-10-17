@@ -3,6 +3,7 @@
     import Chessboard from "$lib/components/chessboard.svelte";
     import Twistysquare from "$lib/components/twistysquare.svelte";
     import Trafficlights from "$lib/components/trafficlights.svelte";
+    import TextAnimation from "$lib/components/textanimation.svelte";
     import {PersonStanding, Menu} from "lucide-svelte"
 </script>
 
@@ -36,25 +37,28 @@
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">VISION</h2>
-                <p class="text-neutral-300 max-w-[500px]">To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute.</p>
+                <p class="text-neutral-300 max-w-[500px] lg:text-justify">To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute.</p>
             </div>
             <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">MISSION</h2>
-                <p class="text-neutral-300 max-w-[500px]">
+                <!-- <p class="text-neutral-300 max-w-[500px] lg:text-justify">
                     <bold class="font-bold">Education:</bold> To provide the comprehensive teaching of a cutting-edge and globally relevant curriculum in Cyber Security within a conducive and innovative learning environment.
                     <br>
                     <bold class="font-bold">Faculty Excellence</bold>: To cultivate a cadre of dedicated, highly competent, and research-driven faculty members, passionate about advancing the field of cybersecurity and delivering high-quality instructions.
                     <br>
                     <bold class="font-bold">Collaboration</bold>: To actively collaborate with industry leaders, organizations, and government agencies in the development and application of cybersecurity solutions, while ensuring our educational offerings meet the evolving needs of society.
-                </p>
+                </p> -->
+                <TextAnimation text="Education:To provide the comprehensive teaching of a cutting-edge and globally relevant curriculum in Cyber Security within a conducive and innovative learning environment."/>
+                <TextAnimation text="Faculty Excellence:To cultivate a cadre of dedicated, highly competent, and research-driven faculty members, passionate about advancing the field of cybersecurity and delivering high-quality instructions."/>
+                <TextAnimation text="Collaboration:To actively collaborate with industry leaders, organizations, and government agencies in the development and application of cybersecurity solutions, while ensuring our educational offerings meet the evolving needs of society."/>
+
             </div>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
-                <p class="p-6 text-neutral-300 border-b border-neutral-500 flex-grow">
-                    CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies
-                </p>
-                <div class="flex flex-row">
+                <div  class="border-b border-neutral-500 p-10"><TextAnimation text="  CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>   </div>
+                
+                  <div class="flex flex-row">
                     <div class="p-3 flex-grow flex justify-center items-center">
                         <Chessboard/>
                     </div>
