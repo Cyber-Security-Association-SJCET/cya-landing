@@ -45,9 +45,3 @@
 <p bind:this={paragraph} class="p-6 text-neutral-300  flex-grow lg:text-justify">
   {text}
 </p>
-
-<!-- <style>
-  .word {
-    display: inline-block;
-  }
-</style> -->

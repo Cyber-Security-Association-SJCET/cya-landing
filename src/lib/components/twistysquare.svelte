@@ -8,6 +8,8 @@
     let square4: HTMLDivElement;
     let square5: HTMLDivElement;
 
+
+
     onMount(() => {
         const squares = [square1, square2, square3, square4, square5];
         const timeline = gsap.timeline({ repeat: -1, yoyo: true });
