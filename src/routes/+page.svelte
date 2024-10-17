@@ -3,6 +3,7 @@
     import Chessboard from "$lib/components/chessboard.svelte";
     import Twistysquare from "$lib/components/twistysquare.svelte";
     import Trafficlights from "$lib/components/trafficlights.svelte";
+    import Achievements from "$lib/components/achievements.svelte";
     import {PersonStanding, Menu} from "lucide-svelte"
 </script>
 
@@ -29,7 +30,7 @@
     <div class="flex flex-row p-6 border-b-2 border-t-2 border-neutral-700 backdrop-blur-lg">
         <a href="#" class="font-bold">Visit our blog!</a>
     </div>
-    <section id="about" class="flex flex-col gap-2 h-screen">
+    <section id="about" class="flex flex-col gap-2 min-h-screen">
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-3xl font-bold">ABOUT</h2>
         </div>
@@ -83,6 +84,10 @@
             </div>
         </div>
     </section>
+    <Achievements/>
+    <footer class="w-full p-6">
+        
+    </footer>
 </main>
 
 <style>
