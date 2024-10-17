@@ -5,6 +5,7 @@
     import Trafficlights from "$lib/components/trafficlights.svelte";
     import TextAnimation from "$lib/components/textanimation.svelte";
     import {PersonStanding, Menu} from "lucide-svelte"
+  import Textanimation from "$lib/components/textanimation.svelte";
 </script>
 
 <main class="w-full min-h-screen flex flex-col text-white font-[Geist]">
@@ -37,7 +38,7 @@
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">VISION</h2>
-                <p class="text-neutral-300 max-w-[500px] lg:text-justify">To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute.</p>
+                <Textanimation text="To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute."/>
             </div>
             <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">MISSION</h2>
@@ -87,6 +88,9 @@
             </div>
         </div>
     </section>
+    <footer class="">
+        
+      </footer>
 </main>
 
 <style>
