@@ -4,6 +4,7 @@
     import Twistysquare from "$lib/components/twistysquare.svelte";
     import Trafficlights from "$lib/components/trafficlights.svelte";
     import Achievements from "$lib/components/achievements.svelte";
+    import Projects from "$lib/components/projects.svelte";
     import {PersonStanding, Menu} from "lucide-svelte"
 </script>
 
@@ -85,6 +86,7 @@
         </div>
     </section>
     <Achievements/>
+    <Projects/>
     <footer class="w-full p-6">
         
     </footer>

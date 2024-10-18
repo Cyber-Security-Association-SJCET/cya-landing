@@ -35,10 +35,10 @@
 </script>
 
 <div
-    class="relative flex flex-col py-6 w-full overflow-hidden"
+    class="relative flex flex-col pt-6 w-full overflow-hidden"
     bind:this={container}
 >
-    <div class="flex flex-row gap-4 md:gap-8 p-6 mt-auto md:mt-0" bind:this={carouselTop}>
+    <div class="flex flex-row gap-4 md:gap-8 p-6 md:mt-0" bind:this={carouselTop}>
         <img src="/satwa.webp" alt="satwa" class="h-72 rounded-sm" />
         <img src="/nasa.webp" alt="nasa space apps" class="h-72 rounded-sm" />
         <img
@@ -76,7 +76,7 @@
         </div>
     </div>
     <div
-        class="flex flex-row-reverse gap-4 md:gap-8 p-6 mb-auto md:mb-0"
+        class="flex flex-row-reverse gap-4 md:gap-8 pt-6 md:mb-0"
         bind:this={carouselBottom}
     >
         <img src="/satwa.webp" alt="satwa" class="h-72 rounded-sm" />
