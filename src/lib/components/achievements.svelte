@@ -16,9 +16,9 @@
             scrollTrigger: {
                 trigger: container,
                 start: "top top",
-                end: "bottom bottom",
+                end: "bottom center",
                 scrub: 1,
-                pin: true,
+                invalidateOnRefresh: true,
                 anticipatePin: 1,
             },
         });
@@ -35,7 +35,7 @@
 </script>
 
 <div
-    class="relative flex flex-col py-6 w-full min-h-screen overflow-hidden"
+    class="relative flex flex-col py-6 w-full overflow-hidden"
     bind:this={container}
 >
     <div class="flex flex-row gap-4 md:gap-8 p-6 mt-auto md:mt-0" bind:this={carouselTop}>
