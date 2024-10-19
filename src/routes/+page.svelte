@@ -111,10 +111,119 @@
             </div>
         </div>
     </section>
-    
+
     <Achievements/>
+
+    <section id="projects" class="flex flex-col gap-2 min-h-screen">
+        <div class="flex flex-row p-6 items-center">
+            <h2 class="text-4xl font-bold">PROJECTS</h2>
+        </div>
+        <div class="overflow-x-auto px-2 md:px-4">
+            <div class="flex flex-row gap-6">
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                    <div class="p-3">
+                        <h2 class="text-lg font-semibold">Project 1</h2>
+                    </div>
+                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
+                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
+                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
+                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
+                    </div>
+                    <p class="text-md p-6 border-b border-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
+                    </p>
+                    <div class="relative overflow-hidden rounded-b-3xl">
+                        <img
+                            src="/helio_browser.png"
+                            alt="Night scene with mountains, road, and moon"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                    <div class="p-3">
+                        <h2 class="text-lg font-semibold">Project 2</h2>
+                    </div>
+                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
+                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
+                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
+                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
+                    </div>
+                    <p class="text-md p-6 border-b border-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
+                    </p>
+                    <div class="relative overflow-hidden rounded-b-3xl">
+                        <img
+                            src="/helio_browser.png"
+                            alt="Night scene with mountains, road, and moon"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                    <div class="p-3">
+                        <h2 class="text-lg font-semibold">Project 3</h2>
+                    </div>
+                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
+                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
+                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
+                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
+                    </div>
+                    <p class="text-md p-6 border-b border-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
+                    </p>
+                    <div class="relative overflow-hidden rounded-b-3xl">
+                        <img
+                            src="/helio_browser.png"
+                            alt="Night scene with mountains, road, and moon"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                    <div class="p-3">
+                        <h2 class="text-lg font-semibold">Project 4</h2>
+                    </div>
+                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
+                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
+                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
+                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
+                    </div>
+                    <p class="text-md p-6 border-b border-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
+                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
+                    </p>
+                    <div class="relative overflow-hidden rounded-b-3xl">
+                        <img
+                            src="/helio_browser.png"
+                            alt="Night scene with mountains, road, and moon"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <footer class="w-full p-6"></footer>
+    <footer class="w-full p-6">
+        <div class="flex flex-col md:flex-row justify-between items-center md:pt-3">
+            <div>
+                <p>&copy; {new Date().getFullYear()} CYA SJCET | All rights reserved</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </footer>
 </main>
 
 <style>
