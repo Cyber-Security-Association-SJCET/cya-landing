@@ -20,4 +20,8 @@
         font-family: "CutiveMono";
         src: url("/fonts/Cutive_Mono/CutiveMono-Regular.ttf");
     }
+    @font-face{
+        font-family: "jaro";
+        src: url("/fonts/jaro/static/Jaro-Regular.ttf");
+    }
 </style>
