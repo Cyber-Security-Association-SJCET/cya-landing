@@ -34,7 +34,7 @@
     </div>
     <section id="about" class="flex flex-col gap-2 min-h-screen">
         <div class="flex flex-row p-6 items-center">
-            <h2 class="text-3xl font-bold">ABOUT</h2>
+            <h2 class="text-3xl font-bold font-[FearLogo]">ABOUT</h2>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
@@ -52,9 +52,11 @@
         </div>
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
-                <TextAnimation text="  CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>
+                <div class="p-6">
+                    <TextAnimation text=" CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>
+                </div>
                 
-                  <div class="flex flex-row mt-auto border-t border-neutral-500">
+                <div class="flex flex-row mt-auto border-t border-neutral-500">
                     <div class="p-3 flex-grow flex justify-center items-center">
                         <Chessboard/>
                     </div>
@@ -69,9 +71,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[GajrajOne] md:border-t md:border-l-0 flex-grow">
+            <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[FearLogo] md:border-t md:border-l-0 flex-grow">
                 <p class="text-3xl text-center">WORLD ENCRYPTION DAY</p>
-                <h3 class="p-3 bg-slate-50 text-black w-fit text-2xl">OCTOBER 24</h3>
+                <h3 class="p-3 bg-slate-50 rounded text-black w-fit text-2xl">OCTOBER 24</h3>
             </div>
             <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow">
                 <div class="p-6 flex-grow flex items-center justify-center">
@@ -84,8 +86,31 @@
         </div>
     </section>
     <Achievements/>
-    <footer class="w-full p-6">
+    <footer class="w-full p-6 justify-center">
         
+            <div class="">
+                <div class="flex mx-auto justify-center items-center gap-6 p-6 ">
+                    <div href="#"><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
+                    <div href="#"><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div>
+                    <div href="#"><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></div>
+                    <div href="#"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></div>
+                </div>
+            </div>
+            <div class="flex md:flex-col justify-between "><!--flex flex-col md:flex-row gap-4-->
+                <div class="flex flex-col flex-wrap md:flex-row md:justify-center font-[FearLogo] md:items-center text-sm md:text-lg p-6 gap-6 md:gap-24">
+
+                    <a href="#test">HOME</a>
+                    <a href="#test">ABOUT</a>
+                    <a href="#test">achievements</a>
+                    <a href="#test">BLOG</a>
+                    <a href="#test">PROJECTS</a>
+                    
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-center p-4 gap-6 md:gap-36">
+                    <img src="/cya.webp" alt="Cyber Association" class="w-20 md:w-26">
+                    <img src="/sjcet-logo.webp" alt="SJCET PALAI" class="md:h-23 md:w-28 h-20 w-26">
+                </div>
+            </div>
     </footer>
 </main>
 

@@ -42,6 +42,6 @@
   });
 </script>
 
-<p bind:this={paragraph} class="p-6 pb-0 text-neutral-300  flex-grow lg:text-justify">
+<p bind:this={paragraph} class="text-neutral-300  flex-grow lg:text-justify">
   {text}
 </p>

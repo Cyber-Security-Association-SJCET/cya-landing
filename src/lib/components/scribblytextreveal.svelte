@@ -1,42 +1,43 @@
-<!-- <script lang="ts">
+<script lang="ts">
   import { gsap } from "gsap";
   import { onMount } from "svelte";
   import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+  export let text: string;
 
   let paragraph: HTMLParagraphElement;
 
   onMount(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Split the text into words
-    const words = text.split(/\s+/);
+    const chars = paragraph.innerText.split('');
+    paragraph.innerHTML = '';
+    chars.forEach((char) => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.opacity = '0';
+      span.style.display = 'inline-block';
+      paragraph.appendChild(span);
+    });
 
-    // Wrap each word in a span
-    paragraph.innerHTML = words
-      .map((word) => `<span class="word">${word} </span>`)
-      .join("");
-
-    // Set up the GSAP animation
-    gsap.from(paragraph.querySelectorAll(".word"), {
-      opacity: 0,
-      x: xOffset,
-      duration: animationDuration,
-      stagger: staggerDelay,
-      ease: ease,
-      delay: animationDelay,
+    gsap.to(paragraph.children, {
+      opacity: 1,
+      duration: 0.5,
+      stagger: {
+        each: 0.05,
+        from: "random"
+      },
+      ease: "power2.inOut",
       scrollTrigger: {
         trigger: paragraph,
-        start: triggerStart,
-        end: triggerEnd,
-        toggleActions: "play none none reverse",
-      },
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+      }
     });
   });
 </script>
 
-<p
-  bind:this={paragraph}
-  class="p-6 pb-0 text-neutral-300 flex-grow lg:text-justify"
->
-  {text}
-</p> -->
+<p bind:this={paragraph} class="p-6 pb-0 text-neutral-300 flex-grow lg:text-justify">
+   WORLD ENCRYPTION DAY
+</p>

@@ -20,4 +20,8 @@
         font-family: "CutiveMono";
         src: url("/fonts/Cutive_Mono/CutiveMono-Regular.ttf");
     }
+    @font-face{
+        font-family: "FearLogo";
+        src: url("/fonts/fear-logo/FEARLogo-Regular.ttf");
+    }
 </style>
