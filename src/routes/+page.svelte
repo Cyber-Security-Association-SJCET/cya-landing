@@ -5,12 +5,23 @@
     import Trafficlights from "$lib/components/trafficlights.svelte";
     import Achievements from "$lib/components/achievements.svelte";
     import { PersonStanding, Menu, X } from "lucide-svelte";
-
+    import { onMount } from 'svelte';
+    import 'aos/dist/aos.css';
+    import AOS from 'aos';
+    
+   onMount(() => {
+    AOS.init({
+	easing: 'ease-out-back',
+	duration: 1000,
+    anchorPlacement: 'top-bottom'
+});
+   });
     let isMenuOpen = false;
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
     }
+    
 </script>
 
 <main class="w-full min-h-screen flex flex-col text-white font-[Geist] overflow-hidden">
@@ -57,16 +68,16 @@
         <a href="/blog" class="font-bold">Visit our blog!</a>
     </div>
 
-    <section id="about" class="flex flex-col gap-2 min-h-screen">
+    <section id="about" class="flex flex-col gap-2 min-h-screen" >
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-3xl font-bold">ABOUT</h2>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
-            <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
+            <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" data-aos="fade-up-right" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">VISION</h2>
                 <p class="text-neutral-300 max-w-[500px]">To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute.</p>
             </div>
-            <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" id="wormhole">
+            <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center " data-aos="fade-up-right" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">MISSION</h2>
                 <p class="text-neutral-300 max-w-[500px]">
                     <strong class="font-bold">Education:</strong> To provide the comprehensive teaching of a cutting-edge and globally relevant curriculum in Cyber Security within a conducive and innovative learning environment.
@@ -78,7 +89,7 @@
             </div>
         </div>
         <div class="flex flex-col px-6 md:flex-row">
-            <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
+            <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2 " data-aos="flip-up">
                 <p class="p-6 text-neutral-300 border-b border-neutral-500 flex-grow">
                     CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies.
                 </p>
@@ -97,11 +108,11 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[GajrajOne] md:border-t md:border-l-0 flex-grow">
+            <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[GajrajOne] md:border-t md:border-l-0 flex-grow " data-aos="flip-down">
                 <h2 class="text-3xl text-center">WORLD ENCRYPTION DAY</h2>
                 <h3 class="p-3 bg-slate-50 text-black w-fit text-2xl">OCTOBER 24</h3>
             </div>
-            <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow">
+            <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow " data-aos="flip-up">
                 <div class="p-6 flex-grow flex items-center justify-center">
                     <Twistysquare/>
                 </div>
@@ -118,9 +129,9 @@
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-4xl font-bold">PROJECTS</h2>
         </div>
-        <div class="overflow-x-auto px-2 md:px-4">
+        <div class="overflow-x-auto px-2 md:px-4 h-screen">
             <div class="flex flex-row gap-6">
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-right">
                     <div class="p-3">
                         <h2 class="text-lg font-semibold">Project 1</h2>
                     </div>
@@ -142,7 +153,7 @@
                         />
                     </div>
                 </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]" data-aos="zoom-out-up">
                     <div class="p-3">
                         <h2 class="text-lg font-semibold">Project 2</h2>
                     </div>
@@ -164,7 +175,7 @@
                         />
                     </div>
                 </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]" data-aos="zoom-out-up">
                     <div class="p-3">
                         <h2 class="text-lg font-semibold">Project 3</h2>
                     </div>
@@ -186,7 +197,7 @@
                         />
                     </div>
                 </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
+                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-left">
                     <div class="p-3">
                         <h2 class="text-lg font-semibold">Project 4</h2>
                     </div>
