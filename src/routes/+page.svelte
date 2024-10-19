@@ -5,12 +5,14 @@
     import Trafficlights from "$lib/components/trafficlights.svelte";
     import Achievements from "$lib/components/achievements.svelte";
     import { PersonStanding, Menu, X } from "lucide-svelte";
+    import { onMount } from 'svelte';
 
     let isMenuOpen = false;
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
     }
+    
 </script>
 
 <main class="w-full min-h-screen flex flex-col text-white font-[Geist] overflow-hidden">
@@ -118,7 +120,7 @@
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-4xl font-bold">PROJECTS</h2>
         </div>
-        <div class="overflow-x-auto px-2 md:px-4">
+        <div class="overflow-x-auto px-2 md:px-4 h-screen">
             <div class="flex flex-row gap-6">
                 <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]">
                     <div class="p-3">
