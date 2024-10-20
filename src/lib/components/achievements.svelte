@@ -62,7 +62,7 @@
         />
     </div>
     <div class="font-bold text-3xl md:text-5xl py-6 border-y border-neutral-500">
-        <div bind:this={text} class="flex flex-row gap-2 items-center">
+        <div bind:this={text} class="flex flex-row gap-5 font-[FearLogo] items-center">
             <Chessboard />
             <h1>ACHIEVEMENTS</h1>
             <Chessboard />
