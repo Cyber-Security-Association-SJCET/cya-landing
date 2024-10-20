@@ -5,6 +5,7 @@
     import Trafficlights from "$lib/components/trafficlights.svelte";
     import TextAnimation from "$lib/components/textanimation.svelte";
     import Achievements from "$lib/components/achievements.svelte";
+    import ProjectCard from "$lib/components/projectcard.svelte"
     import { PersonStanding, Menu, X } from "lucide-svelte";
     import { onMount } from 'svelte';
     import 'aos/dist/aos.css';
@@ -70,7 +71,7 @@
         <a href="/blog" class="font-bold">Visit our blog!</a>
     </div>
 
-    <section id="about" class="flex flex-col gap-2 min-h-screen" >
+    <section id="about" class="flex flex-col gap-2 min-h-screen text-justify" >
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-3xl font-bold font-[FearLogo]">ABOUT</h2>
         </div>
@@ -91,7 +92,7 @@
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
                 <div class="p-6">
-                    <TextAnimation text=" CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>
+                    <TextAnimation text=" CYA is the association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>
                 </div>
                 
                 <div class="flex flex-row mt-auto border-t border-neutral-500">
@@ -111,7 +112,7 @@
             </div>
             <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[FearLogo] md:border-t md:border-l-0 flex-grow">
                 <p class="text-3xl text-center">WORLD ENCRYPTION DAY</p>
-                <h3 class="p-3 bg-slate-50 rounded text-black w-fit text-2xl">OCTOBER 24</h3>
+                <h3 class="p-3 bg-slate-50 rounded text-black w-fit text-2xl">OCTOBER 21</h3>
             </div>
             <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow " data-aos="flip-up">
                 <div class="p-6 flex-grow flex items-center justify-center">
@@ -124,135 +125,36 @@
         </div>
     </section>
 
+    <div id="achievements"></div>
     <Achievements/>
 
-    <section id="projects" class="flex flex-col gap-2 min-h-screen">
+    <section id="projects" class="flex flex-col gap-2 min-h-screen pb-6">
         <div class="flex flex-row p-6 items-center">
-            <h2 class="text-4xl font-bold">PROJECTS</h2>
+            <h2 class="text-4xl font-bold font-[FearLogo]">PROJECTS</h2>
         </div>
-        <div class="overflow-x-auto px-2 md:px-4 h-screen">
-            <div class="flex flex-row gap-6">
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-right">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 1</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]" data-aos="zoom-out-up">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 2</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]" data-aos="zoom-out-up">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 3</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-left">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 4</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-            </div>
+        <div class="flex flex-col md:flex-row flex-wrap gap-6 p-6 min-h-screen justify-center" >
+            <ProjectCard pname1="HELIOS" pname2="BROWSER" paragraph="Helios Browser (previously known as project web) is an open source modular browser catered more towards developers, designers, and power users. It features functionalities meant to boost their workflow and automate many tasks." names="Milan Suman, Goutham Sreeram, Rajat Sandeep, Jovit Mathew, Aibel Bin Zacariah" pno="Project 1" imgsrc="/helios.jpg"/>
+            <ProjectCard pname1="DIAFA" pname2="SPACEAPP" paragraph="This a philanthropic project created for a hackathon. This projects connects restaurants and NGOs around the world to ensure minimal food waste and maximum filled tummies to bed.This app provides a portal for restaurants to donate their unsold healthy food at the end of the day which can then be found by NGOs and then donated to the poor and needy. as simple as that." names="Aibel Bin Zacariah, Ashin Sabu, Abin Raju Daniel, Abin Thomas, Aravind Manoj, Goldi Babu " pno="Project 2" imgsrc="/diafa.webp"/>
+            <ProjectCard pname1="DDoS Detection" pname2="and Mitigation" paragraph="An implementation of DDoS attack detection and mitigation using packet sniffing with Scapy in Python. It monitors incoming traffic and tracks packet counts from each IP within a time window. If an IP exceeds a set threshold, it's temporarily blocked using iptables, with automatic unblocking after a defined period." names="Andrea Tresa Tom, Annette George, Edwin Joseph, George Mathews, Ashwin MS, Tom Sibu" pno="Project 3" imgsrc="/ddos.webp"/>
         </div>
     </section>
-    
-    <footer class="w-full p-6">
-        <div class="flex flex-col md:flex-row justify-between items-center md:pt-3">
-            <div>
-                <p>&copy; {new Date().getFullYear()} CYA SJCET | All rights reserved</p>
-            </div>
-            <div class="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
-        </div>
     <footer class="w-full p-6 justify-center">
-        
-            <div class="">
+            <div>
                 <div class="flex mx-auto justify-center items-center gap-6 p-6 ">
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></div>
+                    <!-- <div><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
+                    <div><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div> -->
+                    <a href="https://github.com/Cyber-Security-Association-SJCET"><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></a>
+                    <a href="https://www.instagram.com/cya_sjcet"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></a>
                 </div>
             </div>
             <div class="flex md:flex-col justify-between "><!--flex flex-col md:flex-row gap-4-->
                 <div class="flex flex-col flex-wrap md:flex-row md:justify-center font-[FearLogo] md:items-center text-sm md:text-lg p-6 gap-6 md:gap-24">
 
-                    <a href="#test">HOME</a>
-                    <a href="#test">ABOUT</a>
-                    <a href="#test">achievements</a>
-                    <a href="#test">BLOG</a>
-                    <a href="#test">PROJECTS</a>
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#achievements">achievements</a>
+                    <a href="/blog">BLOG</a>
+                    <a href="#projects">PROJECTS</a>
                     
                 </div>
                 <div class="flex flex-col md:flex-row justify-center items-center p-4 gap-6 md:gap-36">
@@ -270,5 +172,8 @@
 
     #wormhole {
         background: no-repeat url("/wormhole.webp") center/cover;
+    }
+    .example::-webkit-scrollbar {
+        display: none;
     }
 </style>
