@@ -223,17 +223,6 @@
             </div>
         </div>
     </section>
-    <footer class="w-full p-6">
-        <div class="flex flex-col md:flex-row justify-between items-center md:pt-3">
-            <div>
-                <p>&copy; {new Date().getFullYear()} CYA SJCET | All rights reserved</p>
-            </div>
-            <div class="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
-        </div>
     <footer class="w-full p-6 justify-center">
         
             <div>
@@ -258,6 +247,9 @@
                     <img src="/cya.webp" alt="Cyber Association" class="w-20 md:w-26">
                     <img src="/sjcet-logo.webp" alt="SJCET PALAI" class="md:h-23 md:w-28 h-20 w-26">
                 </div>
+                <!-- <div>
+                    <p>&copy; {new Date().getFullYear()} CYA SJCET | All rights reserved</p>
+                </div> -->
             </div>
     </footer>
 </main>
