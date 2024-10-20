@@ -223,7 +223,6 @@
             </div>
         </div>
     </section>
-    
     <footer class="w-full p-6">
         <div class="flex flex-col md:flex-row justify-between items-center md:pt-3">
             <div>
@@ -237,12 +236,12 @@
         </div>
     <footer class="w-full p-6 justify-center">
         
-            <div class="">
+            <div>
                 <div class="flex mx-auto justify-center items-center gap-6 p-6 ">
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></div>
+                    <div><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
+                    <div><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div>
+                    <div><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></div>
+                    <div><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></div>
                 </div>
             </div>
             <div class="flex md:flex-col justify-between "><!--flex flex-col md:flex-row gap-4-->
