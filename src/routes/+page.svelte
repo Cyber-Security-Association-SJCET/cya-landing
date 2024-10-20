@@ -10,30 +10,35 @@
     import 'aos/dist/aos.css';
     import AOS from 'aos';
     
-   onMount(() => {
-    AOS.init({
-	easing: 'ease-out-back',
-	duration: 1000,
-    anchorPlacement: 'top-bottom'
-});
-   });
+    onMount(() => {
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000,
+            anchorPlacement: 'top-bottom'
+        });
+    });
     let isMenuOpen = false;
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
     }
     
-    import Textanimation from "$lib/components/textanimation.svelte";
+    function scrollMotion(id: string){
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
+
 </script>
 
 <main class="w-full min-h-screen flex flex-col text-white font-[Geist] overflow-hidden">
     <nav class="flex flex-row p-6 border-b border-neutral-700 w-full items-center relative">
         <img src="/cya.webp" alt="Cyber Association" class="w-11 h-fit lg:w-14">
         <div class="md:flex flex-row items-center gap-6 ml-auto text-lg hidden">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="/blog">Blog</a>
-            <a href="#projects">Projects</a>
+            <button on:click={() => scrollMotion("home")}>Home</button>
+            <button on:click={() => scrollMotion("about")}>About</button>
+            <button on:click={() => scrollMotion("achievements")}>Achievements</button>
+            <button on:click={() => scrollMotion("blog")}>Blog</button>
+            <button on:click={() => scrollMotion("projects")}>Projects</button>
         </div>
         <button on:click={toggleMenu} class="ml-auto md:hidden">
             {#if isMenuOpen}
@@ -45,10 +50,11 @@
         {#if isMenuOpen}
             <div class="absolute font-[jaro] top-full left-0 right-0 bg-black border-b border-neutral-700 md:hidden z-20">
                 <div class="flex flex-col items-center gap-4 py-4">
-                    <a href="#home" on:click={toggleMenu} class="pointer-events-auto">Home</a>
-                    <a href="#about" on:click={toggleMenu} class="pointer-events-auto">About</a>
-                    <a href="/blog" on:click={toggleMenu} class="pointer-events-auto">Blog</a>
-                    <a href="#projects" on:click={toggleMenu} class="pointer-events-auto">Projects</a>
+                    <button on:click={() => scrollMotion("home")}>Home</button>
+                    <button on:click={() => scrollMotion("about")}>About</button>
+                    <button on:click={() => scrollMotion("achievements")}>Achievements</button>
+                    <button on:click={() => scrollMotion("blog")}>Blog</button>
+                    <button on:click={() => scrollMotion("projects")}>Projects</button>
                 </div>
             </div>
         {/if}
@@ -66,7 +72,7 @@
         </div>
     </section>
 
-    <div class="flex flex-row p-6 border-b-2 border-t-2 border-neutral-700 backdrop-blur-lg">
+    <div id="blog" class="flex flex-row p-6 border-b-2 border-t-2 border-neutral-700 backdrop-blur-lg">
         <a href="/blog" class="font-bold">Visit our blog!</a>
     </div>
 
@@ -77,11 +83,10 @@
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col p-6 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center" data-aos="fade-up-right" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">VISION</h2>
-                <Textanimation text="To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute."/>
+                <TextAnimation text="To become a globally recognized hub of excellence in Cyber Security education and research, while upholding the distinctive values of the Institute."/>
             </div>
             <div class="flex flex-col p-6 rounded-b-2xl md:rounded-r-2xl md:rounded-b-none border border-neutral-500 gap-3 md:w-1/2 min-h-72 justify-start items-center " data-aos="fade-up-right" id="wormhole">
                 <h2 class="font-bold text-5xl text-center font-[Jersey10] tracking-wide">MISSION</h2>
-
                 <TextAnimation text="Education:To provide the comprehensive teaching of a cutting-edge and globally relevant curriculum in Cyber Security within a conducive and innovative learning environment."/>
                 <TextAnimation text="Faculty Excellence:To cultivate a cadre of dedicated, highly competent, and research-driven faculty members, passionate about advancing the field of cybersecurity and delivering high-quality instructions."/>
                 <TextAnimation text="Collaboration:To actively collaborate with industry leaders, organizations, and government agencies in the development and application of cybersecurity solutions, while ensuring our educational offerings meet the evolving needs of society."/>
@@ -130,7 +135,7 @@
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-4xl font-bold">PROJECTS</h2>
         </div>
-        <div class="overflow-x-auto px-2 md:px-4 h-screen">
+        <div class="overflow-x-auto px-2 md:px-4 h-screen no-scrollbar">
             <div class="flex flex-row gap-6">
                 <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-right">
                     <div class="p-3">
@@ -224,36 +229,23 @@
         </div>
     </section>
     
-    <footer class="w-full p-6">
-        <div class="flex flex-col md:flex-row justify-between items-center md:pt-3">
-            <div>
-                <p>&copy; {new Date().getFullYear()} CYA SJCET | All rights reserved</p>
-            </div>
-            <div class="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
-        </div>
     <footer class="w-full p-6 justify-center">
         
             <div class="">
                 <div class="flex mx-auto justify-center items-center gap-6 p-6 ">
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></div>
-                    <div href="#"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></div>
+                    <a href="/"><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></a>
+                    <a href="/"><img class=" md:w-35 md:h-35" src="/twitter.png" alt="X(twitter)"></a>
+                    <a href="/"><img class=" md:w-35 md:h-35" src="/github.png" alt="GitHub"></a>
+                    <a href="/"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="Instagram"></a>
                 </div>
             </div>
-            <div class="flex md:flex-col justify-between "><!--flex flex-col md:flex-row gap-4-->
+            <div class="flex md:flex-col justify-between ">
                 <div class="flex flex-col flex-wrap md:flex-row md:justify-center font-[FearLogo] md:items-center text-sm md:text-lg p-6 gap-6 md:gap-24">
-
-                    <a href="#test">HOME</a>
-                    <a href="#test">ABOUT</a>
-                    <a href="#test">achievements</a>
-                    <a href="#test">BLOG</a>
-                    <a href="#test">PROJECTS</a>
-                    
+                    <button on:click={() => scrollMotion("home")}>HOME</button>
+                    <button on:click={() => scrollMotion("about")}>ABOUT</button>
+                    <button on:click={() => scrollMotion("achievements")}>ACHIEVEMENTS</button>
+                    <button on:click={() => scrollMotion("blog")}>BLOG</button>
+                    <button on:click={() => scrollMotion("projects")}>PROJECTS</button>
                 </div>
                 <div class="flex flex-col md:flex-row justify-center items-center p-4 gap-6 md:gap-36">
                     <img src="/cya.webp" alt="Cyber Association" class="w-20 md:w-26">
@@ -270,5 +262,9 @@
 
     #wormhole {
         background: no-repeat url("/wormhole.webp") center/cover;
+    }
+    
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
     }
 </style>
