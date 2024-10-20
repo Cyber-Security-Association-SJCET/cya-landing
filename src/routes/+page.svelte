@@ -5,6 +5,7 @@
     import Trafficlights from "$lib/components/trafficlights.svelte";
     import TextAnimation from "$lib/components/textanimation.svelte";
     import Achievements from "$lib/components/achievements.svelte";
+    import ProjectCard from "$lib/components/projectcard.svelte"
     import { PersonStanding, Menu, X } from "lucide-svelte";
     import { onMount } from 'svelte';
     import 'aos/dist/aos.css';
@@ -126,105 +127,18 @@
 
     <Achievements/>
 
-    <section id="projects" class="flex flex-col gap-2 min-h-screen">
+    <section id="projects" class="flex flex-col gap-2 min-h-screen pb-6">
         <div class="flex flex-row p-6 items-center">
-            <h2 class="text-4xl font-bold">PROJECTS</h2>
+            <h2 class="text-4xl font-bold font-[FearLogo]">PROJECTS</h2>
         </div>
-        <div class="overflow-x-auto px-2 md:px-4 h-screen">
-            <div class="flex flex-row gap-6">
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-right">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 1</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]" data-aos="zoom-out-up">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 2</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px]" data-aos="zoom-out-up">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 3</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div class="bg-black text-white rounded-3xl max-w-lg p-0 border border-gray-300 h-[745px] " data-aos="zoom-out-left">
-                    <div class="p-3">
-                        <h2 class="text-lg font-semibold">Project 4</h2>
-                    </div>
-                    <div class="flex flex-col p-6 justify-start border-t border-b border-white" id="wormhole">
-                        <h1 class="text-6xl font-bold mb-2">HELIOS</h1>
-                        <h1 class="text-6xl font-bold mb-4">BROWSER</h1>
-                        <p class="text-lg mb-4">Milan Suman, Gautham Sreeram S B</p>
-                    </div>
-                    <p class="text-md p-6 border-b border-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec imperdiet arcu eu sagittis accumsan. Nam
-                        vehicula eget enim non dignissim. Nunc dapibus lobortis eros nec
-                    </p>
-                    <div class="relative overflow-hidden rounded-b-3xl">
-                        <img
-                            src="/helio_browser.png"
-                            alt="Night scene with mountains, road, and moon"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-            </div>
+        <div class="flex gap-6 overflow-x-auto md:px-6 h-screen" >
+            <ProjectCard pname1="HELIOS" pname2="BROWSER" paragraph="Helios Browser (previously known as project web) is an open source modular browser catered more towards developers, designers, and power users. It features functionalities meant to boost their workflow and automate many tasks." names="MILAN SUMAN,GAUTHAM SREERAM" pno="Project 1" imgsrc="/helios.jpg"/>
+            <ProjectCard pname1="DIAFA" pname2="SPACEAPP" paragraph="This a philanthropic project created for a hackathon. This projects connects restaurants and NGOs around the world to ensure minimal food waste and maximum filled tummies to bed.This app provides a portal for restaurants to donate their unsold healthy food at the end of the day which can then be found by NGOs and then donated to the poor and needy. as simple as that." names="" pno="Project 2" imgsrc=""/>
+            <ProjectCard pname1="DDoS Detection" pname2="and Mitigation" paragraph="An implementation of DDoS attack detection and mitigation using packet sniffing with Scapy in Python. It monitors incoming traffic and tracks packet counts from each IP within a time window. If an IP exceeds a set threshold, it's temporarily blocked using iptables, with automatic unblocking after a defined period." names="Andrea Tresa Tom, Annette George,Edwin Joseph,George Mathews, Ashwin MS,Tom Sibu" pno="Project 3" imgsrc=""/>
+            <ProjectCard pname1="Helios" pname2="Browser" paragraph="" names="" pno="Project 4" imgsrc=""/>
         </div>
     </section>
     <footer class="w-full p-6 justify-center">
-        
             <div>
                 <div class="flex mx-auto justify-center items-center gap-6 p-6 ">
                     <div><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
@@ -247,9 +161,6 @@
                     <img src="/cya.webp" alt="Cyber Association" class="w-20 md:w-26">
                     <img src="/sjcet-logo.webp" alt="SJCET PALAI" class="md:h-23 md:w-28 h-20 w-26">
                 </div>
-                <!-- <div>
-                    <p>&copy; {new Date().getFullYear()} CYA SJCET | All rights reserved</p>
-                </div> -->
             </div>
     </footer>
 </main>
@@ -261,5 +172,8 @@
 
     #wormhole {
         background: no-repeat url("/wormhole.webp") center/cover;
+    }
+    .example::-webkit-scrollbar {
+        display: none;
     }
 </style>
