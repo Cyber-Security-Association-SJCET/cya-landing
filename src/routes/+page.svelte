@@ -71,7 +71,7 @@
         <a href="/blog" class="font-bold">Visit our blog!</a>
     </div>
 
-    <section id="about" class="flex flex-col gap-2 min-h-screen" >
+    <section id="about" class="flex flex-col gap-2 min-h-screen text-justify" >
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-3xl font-bold font-[FearLogo]">ABOUT</h2>
         </div>
@@ -92,7 +92,7 @@
         <div class="flex flex-col px-6 md:flex-row">
             <div class="flex flex-col border border-neutral-500 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl flex-grow md:w-1/2">
                 <div class="p-6">
-                    <TextAnimation text=" CYA is the student association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>
+                    <TextAnimation text=" CYA is the association of the CSE-CY department, focused on building a strong community of cybersecurity enthusiasts. The association's aim is to organize hackathons, events, and workshops that spread knowledge and help students develop their technical skills and stay updated with the latest trends in cybersecurity. CYA encourages students to collaborate and work on real-world problems through hands-on experiences. It serves as a platform for students to showcase their talents and prepare for future careers in this essential field. The association also strives to create a platform for cybersecurity awareness helping students stay ahead of emerging cyber threats and technologies"/>
                 </div>
                 
                 <div class="flex flex-row mt-auto border-t border-neutral-500">
@@ -112,7 +112,7 @@
             </div>
             <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[FearLogo] md:border-t md:border-l-0 flex-grow">
                 <p class="text-3xl text-center">WORLD ENCRYPTION DAY</p>
-                <h3 class="p-3 bg-slate-50 rounded text-black w-fit text-2xl">OCTOBER 24</h3>
+                <h3 class="p-3 bg-slate-50 rounded text-black w-fit text-2xl">OCTOBER 21</h3>
             </div>
             <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow " data-aos="flip-up">
                 <div class="p-6 flex-grow flex items-center justify-center">
@@ -125,36 +125,36 @@
         </div>
     </section>
 
+    <div id="achievements"></div>
     <Achievements/>
 
     <section id="projects" class="flex flex-col gap-2 min-h-screen pb-6">
         <div class="flex flex-row p-6 items-center">
             <h2 class="text-4xl font-bold font-[FearLogo]">PROJECTS</h2>
         </div>
-        <div class="flex gap-6 overflow-x-auto md:px-6 h-screen" >
-            <ProjectCard pname1="HELIOS" pname2="BROWSER" paragraph="Helios Browser (previously known as project web) is an open source modular browser catered more towards developers, designers, and power users. It features functionalities meant to boost their workflow and automate many tasks." names="MILAN SUMAN,GAUTHAM SREERAM" pno="Project 1" imgsrc="/helios.jpg"/>
-            <ProjectCard pname1="DIAFA" pname2="SPACEAPP" paragraph="This a philanthropic project created for a hackathon. This projects connects restaurants and NGOs around the world to ensure minimal food waste and maximum filled tummies to bed.This app provides a portal for restaurants to donate their unsold healthy food at the end of the day which can then be found by NGOs and then donated to the poor and needy. as simple as that." names="" pno="Project 2" imgsrc=""/>
-            <ProjectCard pname1="DDoS Detection" pname2="and Mitigation" paragraph="An implementation of DDoS attack detection and mitigation using packet sniffing with Scapy in Python. It monitors incoming traffic and tracks packet counts from each IP within a time window. If an IP exceeds a set threshold, it's temporarily blocked using iptables, with automatic unblocking after a defined period." names="Andrea Tresa Tom, Annette George,Edwin Joseph,George Mathews, Ashwin MS,Tom Sibu" pno="Project 3" imgsrc=""/>
-            <ProjectCard pname1="Helios" pname2="Browser" paragraph="" names="" pno="Project 4" imgsrc=""/>
+        <div class="flex flex-col md:flex-row flex-wrap gap-6 p-6 min-h-screen justify-center" >
+            <ProjectCard pname1="HELIOS" pname2="BROWSER" paragraph="Helios Browser (previously known as project web) is an open source modular browser catered more towards developers, designers, and power users. It features functionalities meant to boost their workflow and automate many tasks." names="Milan Suman, Goutham Sreeram, Rajat Sandeep, Jovit Mathew, Aibel Bin Zacariah" pno="Project 1" imgsrc="/helios.jpg"/>
+            <ProjectCard pname1="DIAFA" pname2="SPACEAPP" paragraph="This a philanthropic project created for a hackathon. This projects connects restaurants and NGOs around the world to ensure minimal food waste and maximum filled tummies to bed.This app provides a portal for restaurants to donate their unsold healthy food at the end of the day which can then be found by NGOs and then donated to the poor and needy. as simple as that." names="Aibel Bin Zacariah, Ashin Sabu, Abin Raju Daniel, Abin Thomas, Aravind Manoj, Goldi Babu " pno="Project 2" imgsrc=""/>
+            <ProjectCard pname1="DDoS Detection" pname2="and Mitigation" paragraph="An implementation of DDoS attack detection and mitigation using packet sniffing with Scapy in Python. It monitors incoming traffic and tracks packet counts from each IP within a time window. If an IP exceeds a set threshold, it's temporarily blocked using iptables, with automatic unblocking after a defined period." names="Andrea Tresa Tom, Annette George, Edwin Joseph, George Mathews, Ashwin MS, Tom Sibu" pno="Project 3" imgsrc="/ddos.webp"/>
         </div>
     </section>
     <footer class="w-full p-6 justify-center">
             <div>
                 <div class="flex mx-auto justify-center items-center gap-6 p-6 ">
-                    <div><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
-                    <div><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div>
-                    <div><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></div>
-                    <div><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></div>
+                    <!-- <div><img class=" md:w-35 md:h-35" src="/linkedin.png" alt="LinkedIn"></div>
+                    <div><img class=" md:w-35 md:h-35" src="/twitter.png" alt="x(twitter)"></div> -->
+                    <a href="https://github.com/Cyber-Security-Association-SJCET"><img class=" md:w-35 md:h-35" src="/github.png" alt="github"></a>
+                    <a href="https://www.instagram.com/cya_sjcet"><img class=" md:w-35 md:h-35" src="/instagram.png" alt="instagram"></a>
                 </div>
             </div>
             <div class="flex md:flex-col justify-between "><!--flex flex-col md:flex-row gap-4-->
                 <div class="flex flex-col flex-wrap md:flex-row md:justify-center font-[FearLogo] md:items-center text-sm md:text-lg p-6 gap-6 md:gap-24">
 
-                    <a href="#test">HOME</a>
-                    <a href="#test">ABOUT</a>
-                    <a href="#test">achievements</a>
-                    <a href="#test">BLOG</a>
-                    <a href="#test">PROJECTS</a>
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#achievements">achievements</a>
+                    <a href="/blog">BLOG</a>
+                    <a href="#projects">PROJECTS</a>
                     
                 </div>
                 <div class="flex flex-col md:flex-row justify-center items-center p-4 gap-6 md:gap-36">
