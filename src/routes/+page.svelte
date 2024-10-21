@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="flex flex-col items-center justify-center gap-10 border-x border-b border-neutral-500 p-6 font-[FearLogo] md:border-t md:border-l-0 flex-grow">
-                <p class="text-3xl text-center">WORLD ENCRYPTION DAY</p>
+                <p class="text-3xl text-center">GLOBAL ENCRYPTION DAY</p>
                 <h3 class="p-3 bg-slate-50 rounded text-black w-fit text-2xl">OCTOBER 21</h3>
             </div>
             <div class="flex flex-row border-x border-b border-neutral-500 rounded-b-xl md:border-t md:flex-col md:rounded-r-2xl md:rounded-bl-none flex-grow " data-aos="flip-up">
