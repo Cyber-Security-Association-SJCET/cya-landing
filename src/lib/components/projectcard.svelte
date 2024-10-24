@@ -13,17 +13,17 @@
 </script>
 
 <!-- text-white rounded-3xl  border border-gray-300 -->
-<div class="max-w-xl p-0">
+<div class="md:max-w-xl max-w- p-0">
     <div class="p-3 border rounded-t-3xl border-white">
-        <h2 class="text-lg font-semibold">{pno}</h2>
+        <h2 class="md:text-lg text-base font-semibold">{pno}</h2>
     </div>
     <div
         class="flex flex-col p-6 justify-start border border-white"
         id="wormhole"
     >
-        <h1 class="text-6xl font-bold mb-2">{pname1}</h1>
-        <h1 class="text-6xl font-bold mb-4">{pname2}</h1>
-        <p class="text-lg pl-1 mb-4">{names}</p>
+        <h1 class="md:text-6xl text-3xl font-bold mb-2">{pname1}</h1>
+        <h1 class="md:text-6xl text-3xl font-bold mb-4">{pname2}</h1>
+        <p class="md:text-lg text-base pl-1 mb-4">{names}</p>
     </div>
     <p class="p-6 border border-white text-justify">
         <Textanimation text={paragraph} />
